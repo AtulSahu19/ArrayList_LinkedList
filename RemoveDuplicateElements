@@ -1,0 +1,29 @@
+package p1;
+
+import java.util.LinkedList;
+
+public class RemoveDuplicateElements {
+public static void main(String[] args) {
+	LinkedList ref=new LinkedList();
+	LinkedList newref=new LinkedList();
+	ref.add(2);
+	ref.add(3);
+	ref.add(4);
+	ref.add(5);
+	ref.add(6);
+	ref.add(7);
+	
+	newref.add(4);
+	newref.add(7);
+	newref.add(8);
+	newref.add(9);
+	//it will remove all the duplicate elements which is present is ref
+	newref.removeAll(ref);
+
+	//it will add collection newref in ref
+	ref.addAll(newref);
+	
+	System.out.println(ref);
+	
+}
+}
