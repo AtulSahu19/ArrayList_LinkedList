@@ -1,0 +1,18 @@
+package p1;
+
+public class Compare_String {
+public static void main(String[] args) {
+	String []arr= {"String","Story","Dancing","Writing","Poet","Scripting","Distance"};
+int count=0;
+for(String array:arr)
+{
+	array=array.trim();
+	if(array.endsWith("ing"))
+	{
+		System.out.println(array);
+		count++;
+	}
+}
+System.out.println("count of elements is :"+count);
+}
+}
