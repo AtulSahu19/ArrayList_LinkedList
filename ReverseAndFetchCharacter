@@ -1,0 +1,40 @@
+package p1;
+
+import java.util.LinkedList;
+
+public class Reverse {
+   public static void main(String[] args) {
+	LinkedList arr=new LinkedList();
+	LinkedList list=new LinkedList();
+	arr.add('@');
+	arr.add('A');
+	arr.add('7');
+	arr.add('a');
+	arr.add('b');
+	arr.add('e');
+	arr.add('d');
+	arr.add('f');
+	arr.add('1');
+	arr.add(',');
+	arr.add('_');
+	arr.add('$');
+	System.out.println(arr);
+	for(int i=arr.size()-1;i>=0;i--)
+	{
+		
+		list.add(arr.get(i));
+	}
+//	System.out.println(list);
+	for(int i=0;i<arr.size();i=i+2)
+	{
+		char a=(char)list.get(i);
+		int b=a;
+		if((b>=65 && b<=90) ||(b>=97 && b<=122))
+				{
+			System.out.println("It is a alphabet :"+a);
+				}
+		
+	}
+	
+}
+}
