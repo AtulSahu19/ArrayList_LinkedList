@@ -1,0 +1,31 @@
+package p1;
+
+import java.util.LinkedHashSet;
+
+public class DuplicateCharacterRemoveInString {
+public static void main(String[] args) {
+	String str="Raaajjjj";
+LinkedHashSet<Character> set=new LinkedHashSet();
+	
+String unique=uniqueString(str);
+System.out.println(unique);
+}
+public static String uniqueString(String str)
+{
+	LinkedHashSet<Character> set=new LinkedHashSet();
+	
+	for(char c:str.toCharArray())
+	{
+	set.add(c);	
+	}
+	
+	
+	StringBuffer sb=new StringBuffer();
+	for(char c:set)
+	{
+		sb.append(c);
+	}
+	
+	return sb.toString();
+}
+}
